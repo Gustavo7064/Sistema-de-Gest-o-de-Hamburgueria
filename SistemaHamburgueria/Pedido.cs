@@ -20,7 +20,12 @@ namespace SistemaHamburgueria
 
         private void Pedido_Load(object sender, EventArgs e)
         {
-
+            cmbLanches.Items.Add("R$ 50,00");
+            cmbLanches.Items.Add("R$ 58,00");
+            cmbLanches.Items.Add("R$80,00");
+            cmbLanches.Items.Add("R$65,00");
+            cmbLanches.Items.Add("R$70,00");
+            cmbLanches.Items.Add("R$55,00");
         }
 
         private void checkBox4_CheckedChanged(object sender, EventArgs e)
@@ -61,6 +66,11 @@ namespace SistemaHamburgueria
             {
                 Application.Exit();
             }
+
+        }
+
+        private void cmbLanches_SelectedIndexChanged(object sender, EventArgs e)
+        {
 
         }
     }
