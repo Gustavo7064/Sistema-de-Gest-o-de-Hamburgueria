@@ -302,6 +302,7 @@
             this.btnSair.TabIndex = 34;
             this.btnSair.Text = "Sair";
             this.btnSair.UseVisualStyleBackColor = true;
+            this.btnSair.Click += new System.EventHandler(this.btnSair_Click);
             // 
             // btnNovoPedido
             // 

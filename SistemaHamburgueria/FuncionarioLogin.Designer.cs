@@ -32,18 +32,20 @@
             this.txtUsuario = new System.Windows.Forms.TextBox();
             this.lblUsuario = new System.Windows.Forms.Label();
             this.lblSenha = new System.Windows.Forms.Label();
+            this.btnSair = new System.Windows.Forms.Button();
+            this.btnVoltar = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // txtSenha
             // 
-            this.txtSenha.Location = new System.Drawing.Point(292, 194);
+            this.txtSenha.Location = new System.Drawing.Point(351, 196);
             this.txtSenha.Name = "txtSenha";
             this.txtSenha.Size = new System.Drawing.Size(100, 20);
             this.txtSenha.TabIndex = 28;
             // 
             // txtUsuario
             // 
-            this.txtUsuario.Location = new System.Drawing.Point(292, 105);
+            this.txtUsuario.Location = new System.Drawing.Point(351, 105);
             this.txtUsuario.Name = "txtUsuario";
             this.txtUsuario.Size = new System.Drawing.Size(100, 20);
             this.txtUsuario.TabIndex = 29;
@@ -51,7 +53,7 @@
             // lblUsuario
             // 
             this.lblUsuario.AutoSize = true;
-            this.lblUsuario.Location = new System.Drawing.Point(289, 68);
+            this.lblUsuario.Location = new System.Drawing.Point(377, 75);
             this.lblUsuario.Name = "lblUsuario";
             this.lblUsuario.Size = new System.Drawing.Size(43, 13);
             this.lblUsuario.TabIndex = 30;
@@ -60,17 +62,38 @@
             // lblSenha
             // 
             this.lblSenha.AutoSize = true;
-            this.lblSenha.Location = new System.Drawing.Point(289, 163);
+            this.lblSenha.Location = new System.Drawing.Point(382, 168);
             this.lblSenha.Name = "lblSenha";
             this.lblSenha.Size = new System.Drawing.Size(38, 13);
             this.lblSenha.TabIndex = 31;
             this.lblSenha.Text = "Senha\r\n";
+            // 
+            // btnSair
+            // 
+            this.btnSair.Location = new System.Drawing.Point(427, 281);
+            this.btnSair.Name = "btnSair";
+            this.btnSair.Size = new System.Drawing.Size(100, 40);
+            this.btnSair.TabIndex = 32;
+            this.btnSair.Text = "Sair";
+            this.btnSair.UseVisualStyleBackColor = true;
+            this.btnSair.Click += new System.EventHandler(this.btnSair_Click);
+            // 
+            // btnVoltar
+            // 
+            this.btnVoltar.Location = new System.Drawing.Point(282, 281);
+            this.btnVoltar.Name = "btnVoltar";
+            this.btnVoltar.Size = new System.Drawing.Size(100, 40);
+            this.btnVoltar.TabIndex = 33;
+            this.btnVoltar.Text = "Menu";
+            this.btnVoltar.UseVisualStyleBackColor = true;
             // 
             // FuncionarioLogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btnVoltar);
+            this.Controls.Add(this.btnSair);
             this.Controls.Add(this.lblSenha);
             this.Controls.Add(this.lblUsuario);
             this.Controls.Add(this.txtUsuario);
@@ -89,5 +112,7 @@
         private System.Windows.Forms.TextBox txtUsuario;
         private System.Windows.Forms.Label lblUsuario;
         private System.Windows.Forms.Label lblSenha;
+        private System.Windows.Forms.Button btnSair;
+        private System.Windows.Forms.Button btnVoltar;
     }
 }

@@ -13,6 +13,23 @@ namespace SistemaHamburgueria
             {
                 con.Open();
             }
+            catch (Exception erro)
+            {
+                msg = "Ocorreu um erro ao se conectar" + erro.Message;
+            }
+            return con;
+        }
+        public MySqlConnection DesConnectarBD()
+        {
+            try
+            {
+                con.Close();
+            }
+            catch (Exception erro)
+            {
+                msg = "Ocorreu um erro ao se conectar" + erro.Message;
+            }
+            return con;
         }
     }
 }
