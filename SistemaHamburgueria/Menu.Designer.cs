@@ -29,10 +29,10 @@
         private void InitializeComponent()
         {
             this.pnlLanche1 = new System.Windows.Forms.Panel();
+            this.descLanche1 = new System.Windows.Forms.Label();
+            this.lblLanche1 = new System.Windows.Forms.Label();
             this.ptcrLanche1 = new System.Windows.Forms.PictureBox();
             this.lblCardapio = new System.Windows.Forms.Label();
-            this.lblLanche1 = new System.Windows.Forms.Label();
-            this.descLanche1 = new System.Windows.Forms.Label();
             this.pnlLanche2 = new System.Windows.Forms.Panel();
             this.descLanche2 = new System.Windows.Forms.Label();
             this.lblLanche2 = new System.Windows.Forms.Label();
@@ -79,6 +79,24 @@
             this.pnlLanche1.Size = new System.Drawing.Size(199, 131);
             this.pnlLanche1.TabIndex = 0;
             // 
+            // descLanche1
+            // 
+            this.descLanche1.AutoSize = true;
+            this.descLanche1.Location = new System.Drawing.Point(110, 48);
+            this.descLanche1.Name = "descLanche1";
+            this.descLanche1.Size = new System.Drawing.Size(53, 13);
+            this.descLanche1.TabIndex = 29;
+            this.descLanche1.Text = "descricao";
+            // 
+            // lblLanche1
+            // 
+            this.lblLanche1.AutoSize = true;
+            this.lblLanche1.Location = new System.Drawing.Point(110, 18);
+            this.lblLanche1.Name = "lblLanche1";
+            this.lblLanche1.Size = new System.Drawing.Size(49, 13);
+            this.lblLanche1.TabIndex = 28;
+            this.lblLanche1.Text = "Cardapio";
+            // 
             // ptcrLanche1
             // 
             this.ptcrLanche1.Location = new System.Drawing.Point(17, 18);
@@ -95,24 +113,6 @@
             this.lblCardapio.Size = new System.Drawing.Size(49, 13);
             this.lblCardapio.TabIndex = 27;
             this.lblCardapio.Text = "Cardapio";
-            // 
-            // lblLanche1
-            // 
-            this.lblLanche1.AutoSize = true;
-            this.lblLanche1.Location = new System.Drawing.Point(110, 18);
-            this.lblLanche1.Name = "lblLanche1";
-            this.lblLanche1.Size = new System.Drawing.Size(49, 13);
-            this.lblLanche1.TabIndex = 28;
-            this.lblLanche1.Text = "Cardapio";
-            // 
-            // descLanche1
-            // 
-            this.descLanche1.AutoSize = true;
-            this.descLanche1.Location = new System.Drawing.Point(110, 48);
-            this.descLanche1.Name = "descLanche1";
-            this.descLanche1.Size = new System.Drawing.Size(53, 13);
-            this.descLanche1.TabIndex = 29;
-            this.descLanche1.Text = "descricao";
             // 
             // pnlLanche2
             // 
@@ -310,7 +310,7 @@
             this.btnNovoPedido.Name = "btnNovoPedido";
             this.btnNovoPedido.Size = new System.Drawing.Size(112, 40);
             this.btnNovoPedido.TabIndex = 35;
-            this.btnNovoPedido.Text = "Fazer Novo Pedido";
+            this.btnNovoPedido.Text = "Novo Pedido";
             this.btnNovoPedido.UseVisualStyleBackColor = true;
             // 
             // Menu
