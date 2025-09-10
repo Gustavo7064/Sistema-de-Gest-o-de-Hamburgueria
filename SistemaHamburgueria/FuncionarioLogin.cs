@@ -38,5 +38,27 @@ namespace SistemaHamburgueria
             }
                 
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            if (txtUsuario.Text == "Julia" && txtSenha.Text == "1234")
+            {
+                Funcionario fn = new Funcionario();
+                fn.Show();
+                this.Hide();
+            }
+            else
+            {
+                MessageBox.Show("Usuário ou senha incorreto(s)");
+            }
+        }
+
+        private void btnVoltar_Click(object sender, EventArgs e)
+        {
+            Menu mn = new Menu();
+            mn.Show();
+            this.Hide();
+
+        }
     }
 }

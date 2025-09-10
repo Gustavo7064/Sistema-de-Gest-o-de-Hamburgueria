@@ -127,5 +127,21 @@ namespace SistemaHamburgueria
             mn.Show();
             this.Hide();
         }
+
+        private void btnSair_Click_1(object sender, EventArgs e)
+        {
+
+            DialogResult sair = MessageBox.Show("Deseja sair?", "Sair", MessageBoxButtons.YesNo, MessageBoxIcon.Error);
+            if (sair == DialogResult.No)
+            {
+                Funcionario fun = new Funcionario();
+                fun.Show();
+                this.Hide();
+            }
+            else
+            {
+                Application.Exit();
+            }
+        }
     }    }
 

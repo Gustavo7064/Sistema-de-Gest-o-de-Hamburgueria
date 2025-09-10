@@ -42,7 +42,7 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.PictureBox = new System.Windows.Forms.PictureBox();
             this.bntBebidas = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
+            this.btnAcompanhamentos = new System.Windows.Forms.Button();
             this.btnLanches = new System.Windows.Forms.Button();
             this.btnSair = new System.Windows.Forms.Button();
             this.btnNovoPedido = new System.Windows.Forms.Button();
@@ -72,6 +72,7 @@
             this.label16 = new System.Windows.Forms.Label();
             this.lblLanche1 = new System.Windows.Forms.Label();
             this.ptcrLanche1 = new System.Windows.Forms.PictureBox();
+            this.btnFuncionario = new System.Windows.Forms.Button();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             this.panel2.SuspendLayout();
@@ -97,7 +98,7 @@
             this.lblCardapio.AutoSize = true;
             this.lblCardapio.Font = new System.Drawing.Font("Segoe UI", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblCardapio.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(232)))), ((int)(((byte)(200)))));
-            this.lblCardapio.Location = new System.Drawing.Point(581, 24);
+            this.lblCardapio.Location = new System.Drawing.Point(581, 19);
             this.lblCardapio.Name = "lblCardapio";
             this.lblCardapio.Size = new System.Drawing.Size(232, 65);
             this.lblCardapio.TabIndex = 51;
@@ -125,7 +126,7 @@
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(105, 34);
             this.label15.TabIndex = 48;
-            this.label15.Text = "Anéis de cebola\r\nfritos 160g";
+            this.label15.Text = "Anéis de cebola\r\n    fritos 160g";
             // 
             // pictureBox4
             // 
@@ -180,7 +181,7 @@
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(105, 34);
             this.label3.TabIndex = 35;
-            this.label3.Text = "Anéis de cebola\r\nfritos 120g";
+            this.label3.Text = "Anéis de cebola\r\n    fritos 120g";
             // 
             // label4
             // 
@@ -207,9 +208,10 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(39)))), ((int)(((byte)(35)))));
+            this.panel1.Controls.Add(this.btnFuncionario);
             this.panel1.Controls.Add(this.PictureBox);
             this.panel1.Controls.Add(this.bntBebidas);
-            this.panel1.Controls.Add(this.button3);
+            this.panel1.Controls.Add(this.btnAcompanhamentos);
             this.panel1.Controls.Add(this.btnLanches);
             this.panel1.Controls.Add(this.btnSair);
             this.panel1.Controls.Add(this.btnNovoPedido);
@@ -245,20 +247,26 @@
             this.bntBebidas.TabIndex = 48;
             this.bntBebidas.Text = "       🥤 Bebidas                             ";
             this.bntBebidas.UseVisualStyleBackColor = false;
+            this.bntBebidas.Click += new System.EventHandler(this.bntBebidas_Click);
+            this.bntBebidas.MouseLeave += new System.EventHandler(this.bntBebidas_MouseLeave);
+            this.bntBebidas.MouseHover += new System.EventHandler(this.bntBebidas_MouseHover);
             // 
-            // button3
+            // btnAcompanhamentos
             // 
-            this.button3.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button3.FlatAppearance.BorderSize = 0;
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button3.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(232)))), ((int)(((byte)(200)))));
-            this.button3.Location = new System.Drawing.Point(-10, 236);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(219, 32);
-            this.button3.TabIndex = 47;
-            this.button3.Text = "      🍟  Acompanhamentos                                 ";
-            this.button3.UseVisualStyleBackColor = false;
+            this.btnAcompanhamentos.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnAcompanhamentos.FlatAppearance.BorderSize = 0;
+            this.btnAcompanhamentos.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnAcompanhamentos.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAcompanhamentos.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(232)))), ((int)(((byte)(200)))));
+            this.btnAcompanhamentos.Location = new System.Drawing.Point(-10, 236);
+            this.btnAcompanhamentos.Name = "btnAcompanhamentos";
+            this.btnAcompanhamentos.Size = new System.Drawing.Size(219, 32);
+            this.btnAcompanhamentos.TabIndex = 47;
+            this.btnAcompanhamentos.Text = "      🍟  Acompanhamentos                                 ";
+            this.btnAcompanhamentos.UseVisualStyleBackColor = false;
+            this.btnAcompanhamentos.Click += new System.EventHandler(this.button3_Click);
+            this.btnAcompanhamentos.MouseLeave += new System.EventHandler(this.button3_MouseLeave);
+            this.btnAcompanhamentos.MouseHover += new System.EventHandler(this.button3_MouseHover);
             // 
             // btnLanches
             // 
@@ -275,6 +283,9 @@
             this.btnLanches.TabIndex = 46;
             this.btnLanches.Text = "       🍔 Lanches                                 ";
             this.btnLanches.UseVisualStyleBackColor = false;
+            this.btnLanches.Click += new System.EventHandler(this.btnLanches_Click);
+            this.btnLanches.MouseLeave += new System.EventHandler(this.btnLanches_MouseLeave);
+            this.btnLanches.MouseHover += new System.EventHandler(this.btnLanches_MouseHover);
             // 
             // btnSair
             // 
@@ -283,12 +294,13 @@
             this.btnSair.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSair.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSair.ForeColor = System.Drawing.Color.White;
-            this.btnSair.Location = new System.Drawing.Point(28, 403);
+            this.btnSair.Location = new System.Drawing.Point(28, 394);
             this.btnSair.Name = "btnSair";
             this.btnSair.Size = new System.Drawing.Size(147, 28);
             this.btnSair.TabIndex = 44;
             this.btnSair.Text = "Sair";
             this.btnSair.UseVisualStyleBackColor = false;
+            this.btnSair.Click += new System.EventHandler(this.btnSair_Click);
             // 
             // btnNovoPedido
             // 
@@ -303,6 +315,7 @@
             this.btnNovoPedido.TabIndex = 45;
             this.btnNovoPedido.Text = "✓  Fazer Pedido";
             this.btnNovoPedido.UseVisualStyleBackColor = false;
+            this.btnNovoPedido.Click += new System.EventHandler(this.btnNovoPedido_Click);
             // 
             // button1
             // 
@@ -337,7 +350,7 @@
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(90, 34);
             this.label9.TabIndex = 39;
-            this.label9.Text = "Nuggets com\r\n10 unidades\r\n";
+            this.label9.Text = "Nuggets com\r\n 10 unidades\r\n";
             // 
             // pictureBox1
             // 
@@ -383,7 +396,7 @@
             this.label18.Name = "label18";
             this.label18.Size = new System.Drawing.Size(90, 34);
             this.label18.TabIndex = 38;
-            this.label18.Text = "Nuggets com\r\n6 unidades\r\n";
+            this.label18.Text = "Nuggets com\r\n  6 unidades\r\n";
             // 
             // pictureBox2
             // 
@@ -428,7 +441,7 @@
             this.label17.Name = "label17";
             this.label17.Size = new System.Drawing.Size(90, 34);
             this.label17.TabIndex = 32;
-            this.label17.Text = "Nuggets com\r\n4 unidades";
+            this.label17.Text = "Nuggets com\r\n  4 unidades";
             // 
             // label7
             // 
@@ -479,7 +492,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(232)))), ((int)(((byte)(200)))));
-            this.label1.Location = new System.Drawing.Point(109, 55);
+            this.label1.Location = new System.Drawing.Point(115, 55);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(89, 34);
             this.label1.TabIndex = 33;
@@ -524,7 +537,7 @@
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(232)))), ((int)(((byte)(200)))));
-            this.label5.Location = new System.Drawing.Point(103, 54);
+            this.label5.Location = new System.Drawing.Point(110, 55);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(89, 34);
             this.label5.TabIndex = 31;
@@ -569,7 +582,7 @@
             this.label16.AutoSize = true;
             this.label16.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label16.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(232)))), ((int)(((byte)(200)))));
-            this.label16.Location = new System.Drawing.Point(106, 55);
+            this.label16.Location = new System.Drawing.Point(112, 55);
             this.label16.Name = "label16";
             this.label16.Size = new System.Drawing.Size(89, 34);
             this.label16.TabIndex = 32;
@@ -598,6 +611,21 @@
             this.ptcrLanche1.TabIndex = 0;
             this.ptcrLanche1.TabStop = false;
             // 
+            // btnFuncionario
+            // 
+            this.btnFuncionario.BackColor = System.Drawing.Color.Silver;
+            this.btnFuncionario.FlatAppearance.BorderSize = 0;
+            this.btnFuncionario.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnFuncionario.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnFuncionario.ForeColor = System.Drawing.Color.Black;
+            this.btnFuncionario.Location = new System.Drawing.Point(28, 437);
+            this.btnFuncionario.Name = "btnFuncionario";
+            this.btnFuncionario.Size = new System.Drawing.Size(147, 28);
+            this.btnFuncionario.TabIndex = 50;
+            this.btnFuncionario.Text = "Funcionários";
+            this.btnFuncionario.UseVisualStyleBackColor = false;
+            this.btnFuncionario.Click += new System.EventHandler(this.btnFuncionario_Click);
+            // 
             // Acompanhamentos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -615,6 +643,7 @@
             this.Controls.Add(this.pnlLanche2);
             this.Controls.Add(this.pnlLanche1);
             this.Name = "Acompanhamentos";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Acompanhamentos";
             this.Load += new System.EventHandler(this.Acompanhamentos_Load);
             this.panel3.ResumeLayout(false);
@@ -663,7 +692,7 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.PictureBox PictureBox;
         private System.Windows.Forms.Button bntBebidas;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button btnAcompanhamentos;
         private System.Windows.Forms.Button btnLanches;
         private System.Windows.Forms.Button btnSair;
         private System.Windows.Forms.Button btnNovoPedido;
@@ -693,5 +722,6 @@
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.Label lblLanche1;
         private System.Windows.Forms.PictureBox ptcrLanche1;
+        private System.Windows.Forms.Button btnFuncionario;
     }
 }
